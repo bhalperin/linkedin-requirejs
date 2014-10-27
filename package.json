@@ -1,0 +1,20 @@
+{
+  "name": "benny",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "gulp-less": "~1.2.3"
+  },
+  "devDependencies": {
+    "underscore": "~1.6.0",
+    "backbone": "~1.1.2",
+    "firebase": "~1.0.12",
+    "jquery": "~2.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Benny Halperin",
+  "license": "ISC"
+}

@@ -1,0 +1,57 @@
+<!--
+To change this template use Tools | Templates.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Benny</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<!-- build:css(.tmp) styles/main.css -->
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style/app.css">
+	<!-- endbuild -->
+	<!-- build:js scripts/vendor/modernizr.js -->
+	<script src="bower_components/modernizr/modernizr.js"></script>
+	<!-- endbuild -->
+    <title></title>
+</head>
+<body>
+	<div class="identity-panel">
+		<span class="linkedin font-brandico brandico-linkedin-rect"></span>
+		Connect with LinkedIn
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="me"></div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="filter-panel">
+					<div class="h3">Filter (to be implemented)</div>
+					<div class="filter-by-caption">
+						<input type="checkbox" class="all" />
+						Industries
+					</div>
+					<div class="filter-by industries"></div>
+				</div>
+			</div>
+			<div class="col-md-8">
+				<div class="h3 contacts-title"></div>
+				<ul class="contact-list"></ul>
+			</div>
+		</div>
+	</div>
+	<script>
+		window.BH = {};
+	</script>
+	<script data-main="scripts/main" src="bower_components/requirejs/require.js"></script>
+</body>
+</html>

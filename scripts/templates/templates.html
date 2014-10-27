@@ -1,0 +1,50 @@
+<!-- profile -->
+<script type="text/html" id="profileTemplate">
+	<div class="h3">Me</div>
+	<div class="content">
+		<img src="${data.imageUrl}" />
+		<br />
+		<span class="name">${data.name}</span>
+		<span class="title">${data.title}</span>
+	</div>
+</script>
+
+<!-- contacts filter caption -->
+<script type="text/html" id="contactsFilterCaptionTemplate">
+	<div class="filter-by-caption data-filter="${data.filter}">
+		<input type="checkbox" class="all" />
+		${data.filterName}
+	</div>
+</script>
+
+<!-- contacts filter item -->
+<script type="text/html" id="contactsFilterItemTemplate">
+	<label>
+		<div class="cb">
+			<input type="checkbox" data-value="${data.name}" />
+		</div>
+		<div class="title">
+			<span class="name">${data.name}</span>
+			(<span class="count">${data.count}</span>)
+		</div>
+	</label>
+</script>
+
+<!-- contacts title -->
+<script type="text/html" id="contactsTitleTemplate">
+	My Contacts (total ${data.total}, showing ${data.count})
+</script>
+
+<!-- contact -->
+<script type="text/html" id="contactTemplate">
+	<div class="picture-panel not-displayed">
+		<img class="picture" src="${data.pictureUrl}" />
+	</div>
+	<div class="details-panel">
+		<span class="name">${data.lastName}, ${data.firstName}</span>
+		<span class="title">${data.title}</span>
+	</div>
+	<div class="profile-link" title="Open profile in a new tab" data-toggle="tooltip" data-placement="left">
+		<a href="${data.profileUrl}" target="_blank"><span class="font-fontawesome fontawesome-linkedin" /></a>
+	</div>
+</script>

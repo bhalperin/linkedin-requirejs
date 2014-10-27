@@ -1,0 +1,32 @@
+{
+  "name": "Benny Halperin",
+  "main": "index.js",
+  "version": "0.0.0",
+  "authors": [
+    "bhalperin <bhalperin@gmail.com>"
+  ],
+  "moduleType": [
+    "amd",
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "hello": "~0.2.1"
+  },
+  "devDependencies": {
+    "backbone": "~1.1.2",
+    "jquery": "~2.1.1",
+    "bootstrap": "~3.1.1",
+    "requirejs": "~2.1.11"
+  },
+  "resolutions": {
+    "backbone": ">=0.9.9 <=1.1.2"
+  }
+}

@@ -1,0 +1,162 @@
+/*
+    Document   : style/app.less
+    Created on : 2014-05-02 01:40 PM
+    Author     : bhalperin
+    Description:
+    Purpose of the stylesheet follows.
+    To change this template use Tools | Templates.
+*/
+
+@import url(http://weloveiconfonts.com/api/?family=brandico|entypo|fontawesome|maki|typicons);
+
+html, body {
+	font-family: Trebuchet MS;
+	font-size: 14px;
+}
+
+.not-displayed {
+	display: none;
+}
+
+div.h3 {
+	background-color: #dae7ee;
+	border-radius: 6px;
+	margin: 0 5px;
+	padding: 10px;
+}
+
+.identity-panel {
+	cursor: pointer;
+	display: inline-block;
+	padding: 0 10px;
+	
+	.linkedin {
+		color: #64add2;
+		font-size: 2em;
+	}
+}
+
+.me .content {
+	padding: 10px;
+}
+
+.contact-list {
+	padding: 10px;
+	
+    li {
+		background-color: #fcfcfc;
+		border: 1px solid #cccccc;
+		border-radius: 6px;
+		box-shadow: 2px 2px #cccccc;
+		cursor: default;
+		list-style-type: none;
+		margin: 0 0 10px 0;
+		padding: 10px;
+		position: relative;
+		
+		.picture-panel {
+			position: relative;
+		
+			.picture {
+				border-radius: 6px;
+				width: 40px;
+				
+				&.big {
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					width: 80px;
+				}
+			}
+		}
+		
+		.details-panel {
+			margin-right: 40px;
+			
+			@media (max-width: 320px) {
+				display: none;
+			}
+		
+			.name {
+				display: inline-block;
+				font-weight: bold;
+			}			
+		}
+		
+		.profile-link {
+			font-size: 1.2em;
+			right: 10px;
+			position: absolute;
+			top: 10px;
+			
+			a {
+				background-color: #eeeeee;
+				border-radius: 3px;
+				color: #333333;
+				padding: 0 5px;
+			
+				&:hover {
+					background-color: #64add2;
+					color: #ffffff;
+					text-decoration: none;
+				}
+			}
+		}
+		
+		.title {
+		}
+	}
+}
+
+.filter-panel {
+	.filter-by-caption {
+		background-color: #dae7ee;
+		border-radius: 5px;
+		font-size: 1.2em;
+		font-weight: bold;
+		margin: 10px 5px;
+		padding: 0 5px;
+	}
+	
+	.filter-by {
+		margin: 0 5px;
+		padding: 0 5px;
+		
+		label {
+			cursor: pointer;
+			display: block;
+			font-weight: normal;
+			
+			&:hover {
+				color: #64add2;
+			}
+			
+			.cb {
+				display: inline-block;
+				vertical-align: top;
+			}
+			
+			.title {
+				display: inline-block;
+				margin-left: 5px;
+				width: 80%;
+		
+				.count {
+					font-weight: bold;
+				}
+			}
+		}
+	}
+}
+
+/* web fonts */
+
+.font-brandico:before {
+    font-family: "brandico", sans-serif;
+    font-weight: normal;
+}
+
+.font-fontawesome:before {
+    font-family: "fontawesome", sans-serif;
+    font-weight: normal;
+}
