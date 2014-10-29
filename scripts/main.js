@@ -72,7 +72,9 @@ require([
 	hello.init({ linkedin: linkedin.apiKey });
 	linkedIn.attr("title", rest.getLinkedinAccessTokenUrl())
 	.on("click", function() {
-		var xhr = hello("linkedin").login({ scope: "r_network, rw_nus" })
+		var xhr = hello("linkedin").login({
+			scope: "r_network, rw_nus"
+		})
 		.then(function() {
 		},
 		function(e) {
