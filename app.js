@@ -38,7 +38,7 @@ define([
 		Templates.init();
 
 		hello.on("auth.login", function(auth) {
-			hello(auth.network).api("/me").then(function(response) {
+			hello(auth.network).api("/me").success(function(response) {
 				myProfileView = new ProfileView({
 					model: new Profile({
 						name: response.formattedName,
@@ -47,7 +47,7 @@ define([
 				});
 				renderProfile();
 			});
-			hello(auth.network).api("/me/friends", { limit: 100 }).then(function(response) {
+			hello(auth.network).api("/me/friends", { limit: 100 }).success(function(response) {
 				var contactsStatsData,
 					contactsByIndustry,
 					collectionData;
